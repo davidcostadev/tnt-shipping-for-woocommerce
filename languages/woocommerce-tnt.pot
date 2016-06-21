@@ -1,0 +1,408 @@
+# Copyright (C) 2016 Elias Júnior
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: TNT Shipping for WooCommerce 1.0.0-beta1\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/plugins/tnt-shipping-for-woocommerce/\n"
+"POT-Creation-Date: 2016-06-21 23:51:21+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:67
+msgid "View logs."
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:78
+msgid "Frete por item"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:80
+msgid "Ative isso para habilitar o cálculo de frete por item e não por pacote."
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:90
+msgid "Usuário"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:92
+msgid "O usuário utilizado para fazer login na transportadora."
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:97
+msgid "Senha"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:99
+msgid "A senha utilizada para fazer login na transportadora."
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:104
+msgid "Inscrição Estadual"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:106
+msgid "Inscrição estadual do Remetente (Pessoa Jurídica)"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:110
+msgid "Identificador"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:112
+msgid "Identificador do Remetente CGC ou CPF."
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:116
+msgid "Identificador Destinatário"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:118
+msgid "Identificador do destinatário CGC ou CPF."
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:122
+msgid "Situação Tributária Remetente"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:125
+#: includes/abstracts/abstract-wc-tnt-shipping.php:144
+#: includes/abstracts/abstract-wc-tnt-shipping.php:170
+#: includes/abstracts/abstract-wc-tnt-shipping.php:179
+#: includes/abstracts/abstract-wc-tnt-shipping.php:188
+#: includes/abstracts/abstract-wc-tnt-shipping.php:197
+msgid "Selecionar"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:126
+#: includes/abstracts/abstract-wc-tnt-shipping.php:145
+msgid "Contribuinte"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:127
+#: includes/abstracts/abstract-wc-tnt-shipping.php:146
+msgid "Não Contribuinte"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:128
+#: includes/abstracts/abstract-wc-tnt-shipping.php:147
+msgid "Contrib Incentivado"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:129
+#: includes/abstracts/abstract-wc-tnt-shipping.php:148
+msgid "Cia Mista Contribuinte"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:130
+#: includes/abstracts/abstract-wc-tnt-shipping.php:149
+msgid "Cia Mista Não Contribuinte"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:131
+#: includes/abstracts/abstract-wc-tnt-shipping.php:150
+msgid "ME / EPP / Simples Nacional Contribuinte"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:132
+#: includes/abstracts/abstract-wc-tnt-shipping.php:151
+msgid "ME / EPP / Simples Nacional Não Contribuinte"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:133
+#: includes/abstracts/abstract-wc-tnt-shipping.php:152
+msgid "Produtor Rural Contribuinte"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:134
+#: includes/abstracts/abstract-wc-tnt-shipping.php:153
+msgid "Produtor Rural Não Contribuinte"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:135
+#: includes/abstracts/abstract-wc-tnt-shipping.php:154
+msgid "Órgão Público Contribuinte"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:136
+#: includes/abstracts/abstract-wc-tnt-shipping.php:155
+msgid "Órgão Público Não Contribuinte"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:137
+#: includes/abstracts/abstract-wc-tnt-shipping.php:156
+msgid "Órgão Público - Programas de fortalecimento e modernização Estadual"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:141
+msgid "Situação Tributária Destinatário"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:160
+msgid "CEP de Origem"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:162
+msgid "CEP origem da Coleta."
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:167
+msgid "Pessoa Remetente"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:171
+#: includes/abstracts/abstract-wc-tnt-shipping.php:180
+msgid "Física"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:172
+#: includes/abstracts/abstract-wc-tnt-shipping.php:181
+msgid "Jurídica"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:176
+msgid "Pessoa Destinatário"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:185
+msgid "Modalidade"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:189
+msgid "Rodoviário Nacional"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:190
+msgid "Aéreo Nacional"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:194
+msgid "Tipo de Cobrança do Frete"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:198
+msgid "CIF"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:199
+msgid "FOB"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:213
+msgid "Ativado/Desativado"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:215
+msgid "Ative isso para habilitar o método de entrega"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:219
+msgid "Título"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:221
+msgid "Isto controla o título que o usuário irá visualizar durante o checkout."
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:226
+msgid "Opções de Comportamento"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:232
+msgid "Prazo de entrega"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:234
+msgid "Exibe o prazo de entrega aproximado"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:235
+msgid "Exibe o prazo de entrega estimado em dias úteis."
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:240
+msgid "Dias adicionais"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:242
+msgid "Dias úteis adicionais ao prazo de entrega."
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:248
+msgid "Taxa de Manuseio"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:250
+msgid ""
+"Coloque um valor, ex.: 2.50, ou porcentagem, ex.: 5%. Deixe em branco para "
+"desativar."
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:255
+msgid "Testes"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:259
+msgid "Log de Depuração"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:261
+msgid "Ativar log"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:263
+msgid "Fazer log dos eventos, como requisições aos WebServices."
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:266
+msgid "Configurações"
+msgstr ""
+
+#: includes/abstracts/abstract-wc-tnt-shipping.php:279
+msgid "%s é um método de entrega da TNT."
+msgstr ""
+
+#: includes/admin/class-wc-tnt-admin-orders.php:46
+msgid "Tracking code:"
+msgstr ""
+
+#: includes/admin/class-wc-tnt-admin-orders.php:67
+msgid "Added a TNT tracking code: %s"
+msgstr ""
+
+#: includes/admin/views/html-admin-missing-dependencies.php:23
+msgid "WooCommerce TNT"
+msgstr ""
+
+#: includes/admin/views/html-admin-missing-dependencies.php:23
+msgid "depends on the last version of WooCommerce to work!"
+msgstr ""
+
+#: includes/admin/views/html-admin-missing-dependencies.php:29
+msgid "Active WooCommerce"
+msgstr ""
+
+#: includes/admin/views/html-admin-missing-dependencies.php:40
+msgid "Install WooCommerce"
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:24
+msgid "Tnt Tracking Code"
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:26
+msgid "This email is sent when configured a tracking code within an order."
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:27
+msgid "Your order has been sent"
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:28
+msgid "[{blogname}] Your order {order_number} has been sent by TNT"
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:29
+msgid "Hi there. Your recent order on {blogname} has been sent by TNT."
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:31
+msgid ""
+"To track your delivery, use the following the tracking code: "
+"{tracking_code}."
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:33
+msgid ""
+"The delivery service is the responsibility of the TNT, but if you have any "
+"questions, please contact us."
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:50
+msgid "Subject"
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:52
+msgid ""
+"This controls the email subject line. Leave blank to use the default "
+"subject: <code>%s</code>."
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:57
+msgid "Email Heading"
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:59
+msgid ""
+"This controls the main heading contained within the email. Leave blank to "
+"use the default heading: <code>%s</code>."
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:64
+msgid "Email Content"
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:66
+msgid ""
+"This controls the initial content of the email. Leave blank to use the "
+"default content: <code>%s</code>."
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:71
+msgid "Email type"
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:73
+msgid "Choose which format of email to send."
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:77
+msgid "Plain text"
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:78
+msgid "HTML"
+msgstr ""
+
+#: includes/emails/class-wc-tnt-tracking-email.php:79
+msgid "Multipart"
+msgstr ""
+
+#: includes/shipping/class-wc-tnt-shipping-default.php:18
+msgid "TNT"
+msgstr ""
+
+#: includes/wc-tnt-functions.php:19
+msgid "Entrega em até %d dia útil"
+msgid_plural "Entrega em até %d dias úteis"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce-tnt.php:134
+msgid "Settings"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "TNT Shipping for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/eliasjnior/tnt-shipping-for-woocommerce"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Calculate shipping for TNT Mercurio Brazil"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Elias Júnior"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://eliasjrweb.com/"
+msgstr ""
