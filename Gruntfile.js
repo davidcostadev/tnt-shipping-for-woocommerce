@@ -7,7 +7,7 @@ module.exports = function ( grunt ) {
 		// gets the package vars
 		pkg: grunt.file.readJSON( 'package.json' ),
 		svn_settings: {
-			path: '../../../../wp_plugins/<%= pkg.name %>',
+			path: 'C:\xampp\htdocs\plugins\svn\tnt-brazil-shipping-for-woocommerce',
 			tag: '<%= svn_settings.path %>/tags/<%= pkg.version %>',
 			trunk: '<%= svn_settings.path %>/trunk',
 			exclude: [
