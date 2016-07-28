@@ -36,6 +36,12 @@ module.exports = function ( grunt ) {
 				}
 			}
 		},
+		
+		jshint: {
+			options: {
+				jshintrc: 'Gruntfile.js'
+			}
+		},
 
 		checktextdomain: {
 			options: {
@@ -138,6 +144,8 @@ module.exports = function ( grunt ) {
 		'checktextdomain',
 		'makepot'
 	] );
+	
+	grunt.registerTask( 'jshint', ['jshint'] );
 
 	// Deploy task
 	grunt.registerTask( 'deploy', [

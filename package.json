@@ -2,7 +2,7 @@
 	"name": "tnt-shipping-for-woocommerce",
 	"text_domain": "woocommerce-tnt",
 	"description": "Calculate shipping for TNT Mercurio Brazil",
-	"version": "1.0.0-beta1",
+	"version": "1.0.0",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/eliasjnior/tnt-shipping-for-woocommerce"
@@ -13,6 +13,7 @@
 		"grunt-checktextdomain": "^1.0.0",
 		"grunt-rsync": "^0.6.2",
 		"grunt-shell": "^1.1.2",
-		"grunt-wp-i18n": "^0.5.3"
+		"grunt-wp-i18n": "^0.5.3",
+		"grunt-contrib-jshint": "~0.11.3"
 	}
 }
