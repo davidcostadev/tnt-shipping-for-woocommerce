@@ -1,8 +1,8 @@
 # TNT Shipping for WooCommerce #
 **Contributors:** eliasjnior
-**Tags:** shipping, delivery, woocommerce, tnt  
+**Tags:** shipping, delivery, woocommerce, tnt, tnt brasil
 **Requires at least:** 4.0  
-**Tested up to:** 4.3  
+**Tested up to:** 4.8  
 **Stable tag:** 2.3.0  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
@@ -29,7 +29,7 @@ Este plugin foi feito baseado na documentação do [Webservices TNT](https://exp
 
 ### Compatibilidade ###
 
-Compatível com as versões 2.1.x, 2.2.x, 2.3.x, 2.4.x, 2.5.x e 2.6.x do WooCommerce.
+Compatível com as versões 2.1.x, 2.2.x, 2.3.x, 2.4.x, 2.5.x e 2.6.x, 3.1.x do WooCommerce.
 
 ## Installation ##
 
