@@ -13,11 +13,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class WC_Tnt_Shipping_Default extends WC_Tnt_Shipping {
 
-	public function __construct() {
+	public function __construct($instance_id = 0) {
 		$this->id           = 'tnt_default';
 		$this->method_title = __( 'TNT', 'woocommerce-tnt' );
 
-		parent::__construct();
+		parent::__construct($instance_id);
 	}
 
 }

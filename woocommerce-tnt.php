@@ -131,7 +131,7 @@ if ( ! class_exists( 'WC_Tnt' ) ) {
 		 */
 		public function plugin_action_links( $links ) {
 			$plugin_links   = array();
-			$plugin_links[] = '<a href="' . esc_url( admin_url( 'admin.php?page=wc-settings&tab=shipping&section=tnt_default' ) ) . '">' . __( 'Settings', 'woocommerce-tnt' ) . '</a>';
+			$plugin_links[] = '<a href="' . esc_url( admin_url( 'admin.php?page=wc-settings&tab=shipping' ) ) . '">' . __( 'Settings', 'woocommerce-tnt' ) . '</a>';
 
 			return array_merge( $plugin_links, $links );
 		}
@@ -156,7 +156,13 @@ if ( ! class_exists( 'WC_Tnt' ) ) {
 		 * @return array
 		 */
 		public function include_methods( $methods ) {
-			$methods[] = 'WC_Tnt_Shipping_Default';
+
+			$methods[] = 'WC_Tnt_Shipping_Legacy';
+
+			if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '2.6.0', '>=' ) ) {
+				$methods['tnt_default'] = 'WC_Tnt_Shipping_Default';
+			}
+
 
 			return $methods;
 		}

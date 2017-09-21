@@ -15,39 +15,30 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * This is a abstract method with default options for all methods.
  */
-abstract class WC_Tnt_Shipping extends WC_Shipping_Method {
+abstract class WC_Tnt_Shipping_Legacy extends WC_Shipping_Method {
 
 	/**
 	 * Initialize the TNT shipping method.
 	 */
-	public function __construct($instance_id = 0) {
-		$this->instance_id        = absint( $instance_id );
-		$this->method_description = sprintf( __( '%s is a shipping method from TNT.', 'woocommerce-tnt' ), $this->method_title );
-		$this->supports           = array(
-            'shipping-zones',
-            'instance-settings',
-        );
-
+	public function __construct() {
 		// Load the form fields.
 		$this->init_form_fields();
-
-		// // Load the settings.s
+		// Load the settings.
 		$this->init_instance_settings();
-		// // Define user set variables.
+		// Define user set variables.
 		$this->enabled            = $this->get_option( 'enabled' );
 		$this->title              = $this->get_option( 'title' );
-		$this->shipping_class_id  = (int) $this->get_option( 'shipping_class_id', '-1' );
 		$this->show_delivery_time = $this->get_option( 'show_delivery_time' );
 		$this->additional_time    = $this->get_option( 'additional_time' );
 		$this->fee                = $this->get_option( 'fee' );
 		$this->debug              = $this->get_option( 'debug' );
 		$this->shipping_per_item  = $this->get_option( 'shipping_per_item' );
-		// // Settings for the API
+		// Settings for the API
 		$this->login                               = $this->get_option( 'settings_login' );
 		$this->password                            = $this->get_option( 'settings_password' );
-		$this->cd_division_client                          = $this->get_option( 'settings_cd_division_client' );
 		$this->nr_inscricao_estadual               = $this->get_option( 'settings_nr_inscricao_estadual' );
 		$this->nr_identif                          = $this->get_option( 'settings_nr_identif' );
+		$this->cd_division_client                  = $this->get_option( 'settings_cd_division_client' );
 		$this->tp_situacao_tributaria_remetente    = $this->get_option( 'settings_tp_situacao_tributaria_remetente' );
 		$this->tp_situacao_tributaria_destinatario = $this->get_option( 'settings_tp_situacao_tributaria_destinatario' );
 		$this->cep_origem                          = $this->get_option( 'settings_cep_origem' );
@@ -56,16 +47,16 @@ abstract class WC_Tnt_Shipping extends WC_Shipping_Method {
 		$this->tp_frete                            = $this->get_option( 'settings_tp_frete' );
 		$this->nr_identif_cliente_dest             = $this->get_option( 'settings_nr_identif_cliente_dest' );
 		$this->tp_pessoa_destinatario              = $this->get_option( 'settings_tp_pessoa_destinatario' );
-		// // Method variables.
-		// $this->availability = 'specific';
-		// $this->countries    = array( 'BR' );
-		// // Active logs.
+		// Method variables.
+		$this->availability = 'specific';
+		$this->countries    = array( 'BR' );
+		// Active logs.
 		if ( 'yes' == $this->debug ) {
 			$this->log = new WC_Logger();
 		}
 
 
-		// // Save admin options.
+		// Save admin options.
 		add_action( 'woocommerce_update_options_shipping_' . $this->id, array( $this, 'process_admin_options' ) );
 	}
 
@@ -286,18 +277,17 @@ abstract class WC_Tnt_Shipping extends WC_Shipping_Method {
 			'type'  => 'title',
 		);
 		$fields                       = array_merge( $fields, $this->get_settings_options() );
-		$this->form_fields            = $fields;
 		$this->instance_form_fields            = $fields;
 	}
 
-	// /**
-	//  * Get shipping method title.
-	//  *
-	//  * @return string
-	//  */
-	// public function get_method_title() {
-	// 	return sprintf( __( '%s é um método de entrega da TNT.', 'woocommerce-tnt' ), $this->method_title );
-	// }
+	/**
+	 * Get shipping method title.
+	 *
+	 * @return string
+	 */
+	public function get_method_title() {
+		return sprintf( __( '%s é um método de entrega da TNT.', 'woocommerce-tnt' ), $this->method_title );
+	}
 
 	/**
 	 * TNT options page.
@@ -349,7 +339,7 @@ abstract class WC_Tnt_Shipping extends WC_Shipping_Method {
 		$shipping = $this->get_rate( $package );
 
 		if ( false === $shipping ) {
-			return 'error';
+			return;
 		}
 
 		$label = $this->get_shipping_method_label( $shipping['delivery_time'] );
@@ -367,7 +357,7 @@ abstract class WC_Tnt_Shipping extends WC_Shipping_Method {
 	}
 
 	protected function get_shipping_method_label( $days ) {
-		if ( 'yes' === $this->show_delivery_time ) {
+		if ( 'yes' == $this->show_delivery_time ) {
 			return wc_tnt_get_estimating_delivery( $this->title, $days, $this->additional_time );
 		}
 

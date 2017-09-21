@@ -38,6 +38,8 @@ class WC_Tnt_Webservice {
 	 */
 	public function __construct( $id = 'tnt', $shipping_instance = null ) {
 		$this->id                = $id;
+		$this->log               = wc_get_logger();
+
 		$this->log               = new WC_Logger();
 		$this->shipping_instance = $shipping_instance;
 	}
@@ -178,9 +180,12 @@ class WC_Tnt_Webservice {
 	}
 
 	private function soap_calculate_shipping( $parameters ) {
+
+
+
 		$shipping_instance   = $this->get_shipping_instance();
 		$defaults_parameters = array(
-			'cdDivisaoCliente'                 => 1,
+			'cdDivisaoCliente'                 => $shipping_instance->cd_division_client,
 			'cepDestino'                       => '',
 			'cepOrigem'                        => wc_tnt_sanitize_postcode( $shipping_instance->cep_origem ),
 			'login'                            => $shipping_instance->login,
@@ -198,7 +203,9 @@ class WC_Tnt_Webservice {
 			'tpSituacaoTributariaRemetente'    => $shipping_instance->tp_situacao_tributaria_remetente,
 			'vlMercadoria'                     => '',
 		);
+
 		$parameters          = wp_parse_args( $parameters, $defaults_parameters );
+
 		$request             = array(
 			'in0' => $parameters
 		);
@@ -211,8 +218,10 @@ class WC_Tnt_Webservice {
 			$call   = $soap->calculaFrete( $request );
 			$out    = (array) $call->out;
 			$errors = (array) $out['errorList'];
+
+
 			if ( ! empty( $errors ) ) {
-				if ( 'yes' == $this->debug ) {
+				if ( 'yes' === $this->debug ) {
 					$str = "Errors in request: ";
 					$this->log->add( $this->id, 'Errors in request: ' . implode( ',', $errors ) );
 				}
